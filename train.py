@@ -314,7 +314,7 @@ def train():
     trainer.train()
     trainer.save_state()  # 保存训练状态为trainer_state.json，输出到training_args.output_dir
     trainer.save_model(
-        output_dir="./output/code_seted_dir"
+        training_args.output_dir
     )  # 保存模型权重到training_args.output_dir
 
 
