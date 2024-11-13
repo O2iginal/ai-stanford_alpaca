@@ -4,10 +4,10 @@ export CUDA_VISIBLE_DEVICES=0
 
 torchrun --nproc_per_node=1 --master_port=4869 ./train.py \
     --model_name_or_path "Qwen/Qwen2.5-0.5B" \
-    --data_path ./alpaca_data_1k.json \
+    --data_path ./alpaca_data_0.1k.json \
     --bf16 True \
-    --output_dir ./output \
-    --num_train_epochs 2 \
+    --output_dir ./output/arg_seted_dir \
+    --num_train_epochs 3 \
     --per_device_train_batch_size 2 \
     --per_device_eval_batch_size 4 \
     --gradient_accumulation_steps 8 \

@@ -1,0 +1,58 @@
+bash "/home/o2igin/Lab/Fun/stanford_alpaca/bash/sft.sh"
+/home/o2igin/Program/anaconda3/envs/aibox/lib/python3.10/site-packages/transformers/training_args.py:1886: FutureWarning: using `--fsdp_transformer_laye
+r_cls_to_wrap` is deprecated. Use fsdp_config instead                                                                                                     warnings.warn(
+WARNING:root:Loading data...
+WARNING:root:Formatting inputs...
+WARNING:root:Tokenizing inputs... This may take some time...
+[2024-11-13 15:43:09,188] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+/home/o2igin/Program/anaconda3/envs/aibox/lib/python3.10/site-packages/torch/distributed/fsdp/_init_utils.py:440: UserWarning: FSDP is switching to use 
+`NO_SHARD` instead of ShardingStrategy.FULL_SHARD since the world size is 1.                                                                              warnings.warn(
+wandb: WARNING The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different
+ run name by setting the `TrainingArguments.run_name` parameter.                                                                                        wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: o2iginal (o2igin). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.3
+wandb: Run data is saved locally in /home/o2igin/Lab/Fun/stanford_alpaca/wandb/run-20241113_154316-jj4sevwg
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run ./output/arg_seted_dir
+wandb: ⭐️ View project at https://wandb.ai/o2igin/huggingface
+wandb: 🚀 View run at https://wandb.ai/o2igin/huggingface/runs/jj4sevwg
+{'loss': 1.5083, 'grad_norm': 31.968568801879883, 'learning_rate': 2e-05, 'epoch': 0.16}                                                                
+{'loss': 2.0648, 'grad_norm': 31.19611930847168, 'learning_rate': 1.982973099683902e-05, 'epoch': 0.32}                                                 
+{'loss': 1.2218, 'grad_norm': 19.506282806396484, 'learning_rate': 1.932472229404356e-05, 'epoch': 0.48}                                                
+{'loss': 1.515, 'grad_norm': 10.791397094726562, 'learning_rate': 1.8502171357296144e-05, 'epoch': 0.64}                                                
+{'loss': 1.5295, 'grad_norm': 10.878559112548828, 'learning_rate': 1.7390089172206594e-05, 'epoch': 0.8}                                                
+{'loss': 1.3836, 'grad_norm': 17.905488967895508, 'learning_rate': 1.6026346363792565e-05, 'epoch': 0.96}                                               
+{'loss': 0.9899, 'grad_norm': 10.393695831298828, 'learning_rate': 1.4457383557765385e-05, 'epoch': 1.12}                                               
+{'loss': 1.0715, 'grad_norm': 8.792560577392578, 'learning_rate': 1.2736629900720832e-05, 'epoch': 1.28}                                                
+{'loss': 0.8106, 'grad_norm': 9.58503246307373, 'learning_rate': 1.092268359463302e-05, 'epoch': 1.44}                                                  
+{'loss': 0.9392, 'grad_norm': 9.967458724975586, 'learning_rate': 9.07731640536698e-06, 'epoch': 1.6}                                                   
+{'loss': 0.8458, 'grad_norm': 11.76953411102295, 'learning_rate': 7.263370099279173e-06, 'epoch': 1.76}                                                 
+{'loss': 0.5353, 'grad_norm': 9.824507713317871, 'learning_rate': 5.542616442234618e-06, 'epoch': 1.92}                                                 
+{'loss': 0.7501, 'grad_norm': 10.03622055053711, 'learning_rate': 3.973653636207437e-06, 'epoch': 2.08}                                                 
+{'loss': 0.8091, 'grad_norm': 7.4836273193359375, 'learning_rate': 2.6099108277934105e-06, 'epoch': 2.24}                                               
+{'loss': 0.5892, 'grad_norm': 8.701435089111328, 'learning_rate': 1.4978286427038602e-06, 'epoch': 2.4}                                                 
+{'loss': 0.464, 'grad_norm': 6.230964183807373, 'learning_rate': 6.752777059564431e-07, 'epoch': 2.56}                                                  
+{'loss': 0.59, 'grad_norm': 7.126522541046143, 'learning_rate': 1.7026900316098217e-07, 'epoch': 2.72}                                                  
+{'loss': 0.5505, 'grad_norm': 23.67561912536621, 'learning_rate': 0.0, 'epoch': 2.88}                                                                   
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 18/18 [08:24<00:00, 27.95s/it]
+/home/o2igin/Program/anaconda3/envs/aibox/lib/python3.10/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:689: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .                                                               warnings.warn(
+/home/o2igin/Program/anaconda3/envs/aibox/lib/python3.10/site-packages/torch/distributed/fsdp/_state_dict_utils.py:773: UserWarning: When using ``NO_SHA
+RD`` for ``ShardingStrategy``, full_state_dict willbe returned.                                                                                           warnings.warn(
+/home/o2igin/Program/anaconda3/envs/aibox/lib/python3.10/site-packages/torch/distributed/fsdp/_state_dict_utils.py:716: UserWarning: When using ``NO_SHA
+RD`` for ``ShardingStrategy``, full_state_dict willbe returned.                                                                                           warnings.warn(
+/home/o2igin/Program/anaconda3/envs/aibox/lib/python3.10/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:689: FutureWarning: FSDP.st
+ate_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .                                                               warnings.warn(
+/home/o2igin/Program/anaconda3/envs/aibox/lib/python3.10/site-packages/torch/distributed/fsdp/_state_dict_utils.py:773: UserWarning: When using ``NO_SHA
+RD`` for ``ShardingStrategy``, full_state_dict willbe returned.                                                                                           warnings.warn(
+/home/o2igin/Program/anaconda3/envs/aibox/lib/python3.10/site-packages/torch/distributed/fsdp/_state_dict_utils.py:716: UserWarning: When using ``NO_SHA
+RD`` for ``ShardingStrategy``, full_state_dict willbe returned.                                                                                           warnings.warn(
+{'train_runtime': 522.8403, 'train_samples_per_second': 0.574, 'train_steps_per_second': 0.034, 'train_loss': 1.0093322628074222, 'epoch': 2.88}        
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 18/18 [08:38<00:00, 28.83s/it]
+/home/o2igin/Program/anaconda3/envs/aibox/lib/python3.10/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:689: FutureWarning: FSDP.st
+ate_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .                                                               warnings.warn(
+/home/o2igin/Program/anaconda3/envs/aibox/lib/python3.10/site-packages/torch/distributed/fsdp/_state_dict_utils.py:773: UserWarning: When using ``NO_SHA
+RD`` for ``ShardingStrategy``, full_state_dict willbe returned.                                                                                           warnings.warn(
+/home/o2igin/Program/anaconda3/envs/aibox/lib/python3.10/site-packages/torch/distributed/fsdp/_state_dict_utils.py:716: UserWarning: When using ``NO_SHA
+RD`` for ``ShardingStrategy``, full_state_dict willbe returned.                                                                                           warnings.warn(
+wandb: 🚀 View run ./output/arg_seted_dir at: https://wandb.ai/o2igin/huggingface/runs/jj4sevwg
+wandb: Find logs at: wandb/run-20241113_154316-jj4sevwg/logs
